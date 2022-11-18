@@ -147,6 +147,7 @@ body {
     align-items: center;
     justify-content:center;
     padding-bottom: 50px;
+    list-style-type: none;
 }
 
 .list-button__btn1 {
@@ -166,6 +167,7 @@ body {
     margin-right: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .list-button__btn2 {
     font-family: 'Roboto';
@@ -184,6 +186,7 @@ body {
     margin-right: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .list-button__btn3 {
     font-family: 'Roboto';
@@ -202,6 +205,7 @@ body {
     margin-right: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .list-button__btn4 {
     font-family: 'Roboto';
@@ -220,6 +224,7 @@ body {
     margin-right: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .list-button__btn5 {
     font-family: 'Roboto';
@@ -238,8 +243,9 @@ body {
     margin-right: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    cursor: pointer;
 }
+
 .list-button .list-button__btn1:hover,
 .list-button .list-button__btn2:hover,
 .list-button .list-button__btn3:hover,
@@ -251,21 +257,24 @@ body {
                 0 1px 2px rgba(0, 0, 0, 0.08),
                 0 2px 2px rgba(0, 0, 0, 0.12);
 }
-.pictures {
+
+.portfolio-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
+    list-style-type: none;
+
 }
-.picture-box {
+.portfolio-list__picture {
     position: relative;
     overflow: hidden;
 }
-li:hover .pic-hid {
+.portfolio-list__item:hover .portfolio-list__hidden-text {
     transform: translateY(0);
 }
-.pic-hid {
+.portfolio-list__hidden-text {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -275,7 +284,7 @@ li:hover .pic-hid {
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.p1 {
+.portfolio-list__text {
     font-family:'Roboto';
     font-style: normal;
     font-size: 18px;
@@ -287,22 +296,22 @@ li:hover .pic-hid {
     padding-left: 24px;
     padding-right: 45px;
 }
-.pictures > li {
+.portfolio-list > .portfolio-list__item {
     flex-basis: calc((100% - 60px) / 3);
 }
-.border-look {
+.portfolio-list__project {
     border-right: 1px solid var(--barnd-color-border2);
     border-bottom: 1px solid var(--barnd-color-border2);
     border-left: 1px solid var(--barnd-color-border2);
     margin-top: -5px;
 }
-.pictures > li:hover {
+.portfolio-list > .portfolio-list__item:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.06),
                 0 4px 4px 0 rgba(0, 0, 0, 0.06),
                 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.pictures .look1 {
+.portfolio-list .portfolio-list__project-name {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 18px;
@@ -314,7 +323,7 @@ li:hover .pic-hid {
     padding-bottom: 4px;
     padding-left: 24px;
 }
-.pictures .look2 {
+.portfolio-list .portfolio-list__project-what {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -324,20 +333,6 @@ li:hover .pic-hid {
     color: var(--brand-color-data);
     padding-bottom: 20px;
     padding-left: 24px;
-}
-
-.filtr {
-    list-style-type: none;
-}
-
-.pictures {
-    list-style-type: none;
-}
-.btn {
-    cursor: pointer;
-}
-.btn1 {
-    cursor: pointer;
 }
 
 .footer {
@@ -352,7 +347,7 @@ li:hover .pic-hid {
     flex-direction: column;
     margin-left: 50px;
 } */
-.logo1 {
+.footer__logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -366,10 +361,10 @@ li:hover .pic-hid {
     margin-bottom: 20px;
     max-width: 145px;
 }
-.logo1 span1 {
+.footer__logo .footer__color {
     color: var(--brand-color);
 }
-.adress-description {
+.footer__adress-description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -381,15 +376,15 @@ li:hover .pic-hid {
     margin-bottom: 9px;
 
 }
-.contact-footer {
+.footer-contact {
     list-style-type: none;
     padding: 0;
     margin-bottom: 60px;
 }
-.info1 {
+.footer-contact__link {
     margin-bottom: 9px;
 }
-.contact-footer .info {
+.footer-contact__link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -401,19 +396,19 @@ li:hover .pic-hid {
     max-width: 231px;
 
 }
-.info {
+.footer-contact__link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.info:hover,
-.info:focus {
+.footer-contact__link:hover,
+.footer-contact__link:focus {
     color: var(--barnd-color-aktyw);
 }
-.contact-footer .info:active {
+.footer-contact__link:active {
     color: var(--barnd-color-aktyw);
 }
 
-.footer-content2-title5 {
+.footer-title {
     width: 113px;
     font-family: 'Roboto';
     font-style: bold;
@@ -432,7 +427,7 @@ li:hover .pic-hid {
     margin-left: 60px;
 
 }
-.box-icon3 {
+.footer-social__box {
     max-width: 44px;
     height: 44px;
     background-color: var(--brand-color-background-icon3);
@@ -441,12 +436,75 @@ li:hover .pic-hid {
     padding: 12px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon3 {
+.footer-social__icon {
     fill: var(--brand-color);
 }
-.box-icon3:hover,
-.box-icon3:focus {
+.footer-social__box:hover,
+.footer-social__box:focus {
     background-color: var(--barnd-color-aktyw);
 }
 
-
+.footer-form {
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-top: 72px;
+    margin-left: 40px;
+    border: none;
+    justify-content: space-between;
+}
+.footer-form__label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    width: 207px;
+    height: 16px;
+}
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    
+}
+.footer-form__input:hover {
+    border-color: var(--barnd-color-aktyw);
+}
+.footer-form__btn {
+    display: flex;
+    background-color: var(--barnd-color-aktyw);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--brand-color);
+    align-self: center;
+    padding-block: 10px;
+    margin-bottom: -35px;
+    padding-left: 42px;
+    padding-right: 30px;
+}
+.footer-form__icon {
+    fill: var(--brand-color);
+    margin-left: 20px;
+    margin-top: 5px;
+} 
