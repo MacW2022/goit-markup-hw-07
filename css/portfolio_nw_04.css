@@ -37,11 +37,11 @@ body {
     padding: 24px 0;
     position: relative;
 }
-.menu {
+.navigation {
     display: flex;
     
 }
-.logo {
+.navigation__logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -53,17 +53,17 @@ body {
     display: flex;
     margin-right: 93px;
 }
-.logo span {
+.navigation__logo .navigation__color {
     color: var(--brand-color-logo);
 }
 
-.social-links {
+.menu {
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 46px 32px;
 }
-.social-links > li:nth-child(2)::after {
+.menu > .menu__item:nth-child(2)::after {
     content: "";
     position: absolute;
     width: 58px;
@@ -73,7 +73,7 @@ body {
     bottom: 0;
     left: 27.6%;
 }
-.link {
+.menu__link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -84,28 +84,35 @@ body {
     text-decoration: none;
    
 }
-.social-links .link:active {
+.menu__link:hover{
+    color:var(--barnd-color-aktyw);
+}
+.menu__link:active {
     color: var(--barnd-color-aktyw);
 }
-.contact {
+.header-contact {
     display: flex;
     gap: 50px 32px;
 }
-.contact-icon1 {
+.header-contact__icon1 {
     margin-right: 10px;
     color: var(--barnd-color-data);
 }
 
-.contact-icon2 {
+.header-contact__icon2 {
     margin-left: 30px;
     margin-right: 10px;
     color: var(--barnd-color-data);
 }
-.contact-data svg {
+.header-contact__link .header-contact__icon1 {
     fill: var(--brand-color-data);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-data {
+.header-contact__link .header-contact__icon2 {
+    fill: var(--brand-color-data);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact__link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -116,30 +123,33 @@ body {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-data:hover svg {
+.header-contact__link:hover .header-contact__icon1 {
     fill: var(--barnd-color-aktyw);
 }
-.contact-data:hover {
+.header-contact__link:hover .header-contact__icon2 {
+    fill: var(--barnd-color-aktyw);
+}
+.header-contact__link:hover {
     color: var(--barnd-color-aktyw);
 }
-.contact {
+.header-contact {
     list-style-type: none;
 }
-.contact .contact-data:active {
+.header-contact .header-contact__link:active {
     color: var(--barnd-color-aktyw);
 }
 
 .section {
     padding: 94px 0;
 }
-.filtr {
+.list-button {
     display: flex;
     align-items: center;
     justify-content:center;
     padding-bottom: 50px;
 }
 
-.btn1 {
+.list-button__btn1 {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -157,7 +167,7 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn2 {
+.list-button__btn2 {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -175,7 +185,7 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn3 {
+.list-button__btn3 {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -193,7 +203,7 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn4 {
+.list-button__btn4 {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -211,7 +221,7 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn5 {
+.list-button__btn5 {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -230,11 +240,11 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.filtr .btn1:hover,
-.filtr .btn2:hover,
-.filtr .btn3:hover,
-.filtr .btn4:hover,
-.filtr .btn5:hover {
+.list-button .list-button__btn1:hover,
+.list-button .list-button__btn2:hover,
+.list-button .list-button__btn3:hover,
+.list-button .list-button__btn4:hover,
+.list-button .list-button__btn5:hover {
     color: var(--brand-color);
     background-color: var(--barnd-color-aktyw);
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
