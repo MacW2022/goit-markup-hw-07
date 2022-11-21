@@ -1,2 +1,19 @@
 @import "./utils/variables.scss";
 @import "./utils/reset.scss";
+@import "./utils/hidden.scss";
+@import "./utils/backdrop.scss";
+
+
+@import "./components/header";
+@import "./components/container";
+@import "./components/section1";
+@import "./components/section2";
+@import "./components/modal";
+@import "./components/lorem-list";
+@import "./components/section3";
+@import "./components/cards-whatwedo";
+@import "./components/team-members";
+@import "./components/team-members__item";
+@import "./components/social-list";
+@import "./components/section5";
+@import "./components/ours-clients-list";
