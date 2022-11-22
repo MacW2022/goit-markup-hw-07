@@ -36,11 +36,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+
+    &:hover {
+
+        border-color: var(--brand-color-hover);
+    }
     
 }
-.footer-form__input:hover {
-    border-color: var(--brand-color-hover);
-}
+
 .footer-form__btn {
     display: flex;
     /* margin-right: 50px; */

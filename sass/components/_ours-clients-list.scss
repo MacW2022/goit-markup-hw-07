@@ -12,19 +12,22 @@
     border-radius: 5px;
     display: block;
     fill: var(--brand-color-icon2);
-}
-.ours-clients-list__icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.ours-clients-list__link:hover .ours-clients-list__icon {
-    fill: var(--brand-color-hover);
-}
-.ours-clients-list__link:hover {
-    border-color: var(--brand-color-hover);
+
+    &:hover {
+
+        border-color: var(--brand-color-hover);
+    }
+
 }
 
 .ours-clients-list__icon {
     margin-inline: 32px;
     margin-top: 18px;
     margin-bottom: 14px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .ours-clients-list__link:hover & {
+        
+        fill: var(--brand-color-hover);
+    }
 }
