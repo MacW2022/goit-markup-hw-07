@@ -18,6 +18,16 @@
     bottom: 0;
     left: 20.5%;
 }
+.menu-navigation > .menu-navigation__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--barnd-color-aktyw);
+    bottom: 0;
+    left: 27.6%;
+}
 .menu-navigation__link {
     font-family: 'Roboto';
     font-style: normal;
